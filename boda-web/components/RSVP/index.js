@@ -18,18 +18,6 @@ export default class RSVP extends Component {
               <input type="text" id="rsvp-name" class="form-input" placeholder="${escapeHtml(texts.rsvp.namePlaceholder)}" required autocomplete="off">
             </div>
             
-            <div class="form-group">
-              <label for="rsvp-companions" class="form-label">${escapeHtml(texts.rsvp.companionsLabel)}</label>
-              <select id="rsvp-companions" class="form-select">
-                <option value="1">1 Persona (Solo yo)</option>
-                <option value="2">2 Personas</option>
-                <option value="3">3 Personas</option>
-                <option value="4">4 Personas</option>
-                <option value="5">5 Personas</option>
-                <option value="6">6 Personas</option>
-              </select>
-            </div>
-            
             <div class="form-group-radio">
               <label class="radio-card">
                 <input type="radio" name="rsvp-attendance" value="si" checked>
@@ -69,21 +57,15 @@ export default class RSVP extends Component {
   }
 
   handleFormSubmit() {
-    const { whatsapp, event } = this.config;
+    const { whatsapp } = this.config;
     const name = document.getElementById('rsvp-name').value.trim();
-    const companions = document.getElementById('rsvp-companions').value;
     const attendance = document.querySelector('input[name="rsvp-attendance"]:checked').value;
 
     let message = '';
     if (attendance === 'si') {
-      message = `¡Hola! Confirmo mi asistencia a la boda de ${event.bride} y ${event.groom}.\n` +
-                `- Nombre: ${name}\n` +
-                `- Asistentes: ${companions} persona(s)\n` +
-                `¡Nos vemos muy pronto!`;
+      message = `¡Hola! Confirmo mi asistencia a su boda. ¡Nos vemos muy pronto! Con cariño ${name}`;
     } else {
-      message = `¡Hola! Agradezco mucho la invitación a la boda de ${event.bride} y ${event.groom}.\n` +
-                `- Nombre: ${name}\n` +
-                `Lamentablemente no podré asistir. ¡Les deseamos lo mejor en esta nueva etapa!`;
+      message = `¡Hola! Agradezco mucho la invitación a su boda. Lamentablemente no podré asistir. Con cariño ${name}`;
     }
 
     const whatsappUrl = WhatsAppService.generateLink(whatsapp.phone, message);
