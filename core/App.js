@@ -26,7 +26,7 @@ export default class App {
    */
   async start(appSelector = '#app') {
     try {
-      const response = await fetch('config/wedding.json');
+      const response = await fetch('config/wedding.json?v=' + Date.now());
       if (!response.ok) {
         throw new Error("No se pudo cargar config/wedding.json");
       }
