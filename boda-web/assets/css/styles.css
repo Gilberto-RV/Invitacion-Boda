@@ -1,0 +1,44 @@
+/* Importar tokens del sistema de diseño (Theme) */
+@import '../../theme/colors.css';
+@import '../../theme/typography.css';
+@import '../../theme/spacing.css';
+@import '../../theme/shadows.css';
+@import '../../theme/animations.css';
+
+/* Importar estilos específicos de cada componente registrado */
+@import '../../components/Hero/styles.css';
+@import '../../components/Intro/styles.css';
+@import '../../components/Countdown/styles.css';
+@import '../../components/Parents/styles.css';
+@import '../../components/Sponsors/styles.css';
+@import '../../components/Gallery/styles.css';
+@import '../../components/Event/styles.css';
+@import '../../components/RSVP/styles.css';
+@import '../../components/Footer/styles.css';
+
+/* Resets y reglas globales */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-ivory);
+  color: var(--color-dark);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-serif);
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

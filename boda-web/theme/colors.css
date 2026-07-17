@@ -1,0 +1,14 @@
+:root {
+  --color-sage: #919682;
+  --color-sage-light: #a4a995;
+  --color-sage-dark: #6e7261;
+  --color-beige: #C7A491;
+  --color-beige-light: #d6bcae;
+  --color-pink: #EECFCA;
+  --color-pink-light: #f5e3e0;
+  --color-ivory: #ECE1DD;
+  --color-white: #FFFFFF;
+  --color-dark: #2C302E;
+  --color-dark-light: #4A4F4C;
+  --color-overlay: rgba(0, 0, 0, 0.35);
+}

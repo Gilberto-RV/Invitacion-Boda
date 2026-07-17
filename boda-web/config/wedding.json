@@ -1,0 +1,122 @@
+{
+  "event": {
+    "bride": "Angélica",
+    "groom": "Daniel",
+    "date": "2026-11-27",
+    "time": "18:00:00",
+    "location": {
+      "name": "Casa Lu",
+      "address": "Puerto Morelos, Cancún",
+      "googleMapsUrl": "https://maps.app.goo.gl/fnfWZoRzMWCpLbqu9"
+    },
+    "details": {
+      "ceremony": {
+        "title": "Ceremonia de Unión",
+        "time": "18:00",
+        "description": "Nuestra unión frente al mar en Puerto Morelos."
+      },
+      "reception": {
+        "title": "Recepción y Banquete",
+        "time": "19:30",
+        "description": "Cena y celebración en los jardines de Casa Lu."
+      }
+    }
+  },
+  "whatsapp": {
+    "phone": "+522413273836",
+    "defaultMessage": "¡Hola! Confirmo mi asistencia a la boda de Angélica y Daniel."
+  },
+  "seo": {
+    "title": "Boda de Angélica & Daniel",
+    "description": "Acompáñanos a celebrar nuestra unión matrimonial el 27 de noviembre de 2026 en Puerto Morelos, Cancún.",
+    "ogTitle": "Boda de Angélica & Daniel",
+    "ogDescription": "Invitación digital oficial para nuestra boda",
+    "ogImage": "assets/img/hero/im1.jpg",
+    "ogUrl": "https://gilberto-rv.github.io/Invitacion-Boda/",
+    "canonical": "https://gilberto-rv.github.io/Invitacion-Boda/",
+    "twitterCard": "summary_large_image"
+  },
+  "texts": {
+    "hero": {
+      "subtitle": "¡Nos casamos!"
+    },
+    "intro": {
+      "title": "Nuestra Historia",
+      "body": "Ante las adversidades siempre prevaleció nuestro amor.\n\nHoy comprendemos que cada desafío fue una prueba que fortaleció nuestro vínculo y convirtió nuestro amor en una promesa firme.\n\nCon enorme ilusión iniciamos una nueva etapa en nuestras vidas, deseando compartir este momento tan especial con quienes más queremos."
+    },
+    "countdown": {
+      "title": "Faltan sólo...",
+      "days": "Días",
+      "hours": "Horas",
+      "minutes": "Minutos",
+      "seconds": "Segundos",
+      "finished": "¡Hoy es el gran día!"
+    },
+    "gallery": {
+      "title": "Nuestros Momentos"
+    },
+    "event": {
+      "title": "Lugar y Horarios",
+      "mapsButton": "Ver en Google Maps"
+    },
+    "rsvp": {
+      "title": "Confirmación de Asistencia",
+      "subtitle": "Por favor, confírmanos tu asistencia antes del 30 de Octubre de 2026",
+      "namePlaceholder": "Tu Nombre Completo",
+      "companionsLabel": "Acompañantes",
+      "confirmYes": "Sí, asistiré",
+      "confirmNo": "No podré asistir",
+      "buttonText": "Confirmar por WhatsApp"
+    },
+    "parents": {
+      "title": "Con la bendición de nuestros padres",
+      "brideLabel": "Padres de la Novia",
+      "groomLabel": "Padres del Novio"
+    },
+    "sponsors": {
+      "title": "Nuestros Padrinos",
+      "velacion": "Velación",
+      "lazoBiblia": "Lazo y Biblia",
+      "anillos": "Anillos",
+      "arras": "Arras"
+    },
+    "footer": {
+      "thankYou": "¡Gracias por formar parte de nuestra vida!"
+    },
+    "common": {
+      "scrollDown": "Desliza para ver más"
+    }
+  },
+  "people": {
+    "parents": {
+      "bride": ["Imelda Cruz Montiel", "Pedro Vázquez Paredes"],
+      "groom": ["Esperanza Corona Ordoñez"]
+    },
+    "sponsors": {
+      "velacion": ["Carlos Mayllen Corona"],
+      "lazoBiblia": ["Adriana Azucena Mancebo Suárez", "Alejandro Sandoval Fierro"],
+      "anillos": ["Ma. Guadalupe Saldaña Zamora"],
+      "arras": ["Verla Lucía Cruz Sánchez", "José David Vásquez Cruz"]
+    }
+  },
+  "assets": {
+    "heroBg": "assets/img/hero/im1.jpg",
+    "introBg": "assets/img/gallery/im2.jpg",
+    "audio": "assets/audio/song.mp3",
+    "gallery": [
+      "assets/img/gallery/im2.jpg",
+      "assets/img/gallery/im3.jpg",
+      "assets/img/gallery/im4.jpg",
+      "assets/img/gallery/im5.jpg",
+      "assets/img/gallery/im6.jpg",
+      "assets/img/gallery/im7.jpg",
+      "assets/img/gallery/im8.jpg",
+      "assets/img/gallery/im9.jpg",
+      "assets/img/gallery/im10.jpg"
+    ]
+  },
+  "features": {
+    "music": true,
+    "petals": true
+  }
+}

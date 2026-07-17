@@ -1,0 +1,105 @@
+:root {
+  --transition-smooth: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --transition-slow: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+@keyframes scrollDown {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100%); }
+}
+
+/* Animaciones de caída de pétalos */
+@keyframes fall {
+  0% {
+    top: -20px;
+    transform: translateX(0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.8;
+  }
+  100% {
+    top: 105vh;
+    transform: translateX(100px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.petals-container-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 9998;
+  overflow: hidden;
+}
+
+.petal-particle {
+  position: absolute;
+  background-color: rgba(145, 150, 130, 0.4); /* Salvia con transparencia */
+  border-radius: 50% 0 50% 0; /* Aspecto de hoja */
+  animation: fall 10s linear infinite;
+  transform-origin: center;
+}
+
+/* Botón flotante de música */
+.music-floating-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  border: 1px solid rgba(145, 150, 130, 0.2);
+  box-shadow: var(--shadow-medium);
+  cursor: pointer;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--transition-smooth);
+}
+
+.music-floating-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.music-floating-btn .music-icon {
+  font-size: 1.25rem;
+  color: var(--color-sage);
+}
+
+.music-floating-btn.playing {
+  background-color: var(--color-sage);
+}
+
+.music-floating-btn.playing .music-icon {
+  color: var(--color-white);
+  animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-delay: 0s !important;
+    animation-duration: 0s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0s !important;
+    scroll-behavior: auto !important;
+  }
+  .petal-particle, .music-floating-btn.playing .music-icon {
+    animation: none !important;
+    display: none !important;
+  }
+}

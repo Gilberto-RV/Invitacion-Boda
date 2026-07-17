@@ -1,0 +1,12 @@
+:root {
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-xxl: 48px;
+  --spacing-section: 100px;
+  
+  --max-width-content: 600px;
+  --max-width-container: 1200px;
+}

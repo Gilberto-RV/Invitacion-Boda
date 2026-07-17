@@ -1,0 +1,116 @@
+.hero-section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--color-white);
+  padding: var(--spacing-lg);
+}
+
+.hero-content {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-subtitle {
+  font-family: var(--font-sans);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: var(--font-size-sm);
+  font-weight: 400;
+  margin-bottom: var(--spacing-md);
+  color: var(--color-pink);
+}
+
+.hero-title {
+  font-size: var(--font-size-h1);
+  line-height: 1.1;
+  margin-bottom: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.hero-title .ampersand {
+  font-size: 2.5rem;
+  font-style: italic;
+  font-family: var(--font-serif);
+  color: var(--color-ivory);
+  opacity: 0.8;
+  margin: var(--spacing-xs) 0;
+}
+
+.hero-divider {
+  width: 60px;
+  height: 1px;
+  background-color: var(--color-ivory);
+  opacity: 0.5;
+  margin: var(--spacing-md) 0;
+}
+
+.hero-date {
+  font-family: var(--font-serif);
+  font-size: var(--font-size-xxl);
+  letter-spacing: 2px;
+  font-style: italic;
+  color: var(--color-ivory);
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-sm);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-xs);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0.7;
+}
+
+.scroll-indicator .arrow {
+  width: 1px;
+  height: 30px;
+  background-color: var(--color-white);
+  position: relative;
+  overflow: hidden;
+}
+
+.scroll-indicator .arrow::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(transparent, var(--color-pink), transparent);
+  animation: scrollDown 2s infinite;
+}
+
+@media (min-width: 768px) {
+  .hero-title {
+    font-size: 5rem;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--spacing-lg);
+  }
+  .hero-title .ampersand {
+    font-size: 3.5rem;
+  }
+  .hero-subtitle {
+    font-size: var(--font-size-base);
+  }
+  .hero-date {
+    font-size: 1.8rem;
+  }
+}
