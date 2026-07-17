@@ -93,6 +93,14 @@
 
 ✔ Se implementó el componente **Footer** (`components/Footer/index.js` y `styles.css`) para el cierre tipográfico y presentación de iniciales de la pareja.
 
+### Reorganización Estructural para GitHub Pages
+
+✔ Se eliminó la carpeta `boda-web/` y se movieron todos los archivos y carpetas a la raíz del repositorio usando `git mv` para preservar al 100% el historial de Git.
+
+✔ Se actualizaron y limpiaron todas las referencias a `boda-web` en la documentación del sistema de diseño, plan de desarrollo, README centralizado y scripts auxiliares.
+
+✔ Se validaron localmente los accesos relativos de imágenes, hojas de estilo, módulos JS y llamadas asíncronas para garantizar compatibilidad con la URL de subdirectorio en GitHub Pages.
+
 ---
 
 ## Pendientes
@@ -103,4 +111,4 @@
 
 ## Próxima etapa
 
-- Despliegue de la invitación digital en producción en GitHub Pages.
+- Monitoreo del correcto despliegue final en la URL pública de producción en GitHub Pages.

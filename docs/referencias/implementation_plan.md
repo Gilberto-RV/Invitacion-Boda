@@ -24,7 +24,7 @@ graph TD
 ### Estructura de Directorios
 
 ```
-boda-web/
+
 ├── config/
 │   └── wedding.json       # Único archivo de configuración (Pareja, textos, SEO, WhatsApp, colores)
 ├── core/
@@ -83,7 +83,7 @@ boda-web/
 
 ### A. Configuración Unificada (JSON)
 
-#### [NEW] [wedding.json](file:///c:/Users/reyda/OneDrive/Documentos/Invitación/boda-web/config/wedding.json)
+#### [NEW] [wedding.json](file:///c:/Users/reyda/OneDrive/Documentos/Invitación/config/wedding.json)
 Consolida todos los datos del evento, textos, configuraciones y SEO.
 ```json
 {
@@ -146,7 +146,7 @@ Consolida todos los datos del evento, textos, configuraciones y SEO.
 
 ### B. Capa Core (Lógica Compartida)
 
-#### [NEW] [Component.js](file:///c:/Users/reyda/OneDrive/Documentos/Invitación/boda-web/core/Component.js)
+#### [NEW] [Component.js](file:///c:/Users/reyda/OneDrive/Documentos/Invitación/core/Component.js)
 ```javascript
 export default class Component {
   constructor(config) {
@@ -166,7 +166,7 @@ export default class Component {
 }
 ```
 
-#### [NEW] [Renderer.js](file:///c:/Users/reyda/OneDrive/Documentos/Invitación/boda-web/core/Renderer.js)
+#### [NEW] [Renderer.js](file:///c:/Users/reyda/OneDrive/Documentos/Invitación/core/Renderer.js)
 ```javascript
 export default class Renderer {
   constructor(config) {
@@ -197,7 +197,7 @@ export default class Renderer {
 }
 ```
 
-#### [NEW] [App.js](file:///c:/Users/reyda/OneDrive/Documentos/Invitación/boda-web/core/App.js)
+#### [NEW] [App.js](file:///c:/Users/reyda/OneDrive/Documentos/Invitación/core/App.js)
 Clase exportada sin instanciar para evitar patrones singleton restrictivos globales.
 ```javascript
 import Renderer from './Renderer.js';
@@ -248,7 +248,7 @@ export default class App {
 }
 ```
 
-#### [NEW] [EventBus.js](file:///c:/Users/reyda/OneDrive/Documentos/Invitación/boda-web/core/EventBus.js)
+#### [NEW] [EventBus.js](file:///c:/Users/reyda/OneDrive/Documentos/Invitación/core/EventBus.js)
 Canal desacoplado para eventos.
 ```javascript
 class EventBus {
@@ -284,7 +284,7 @@ class EventBus {
 export const eventBus = new EventBus();
 ```
 
-#### [NEW] [Router.js](file:///c:/Users/reyda/OneDrive/Documentos/Invitación/boda-web/core/Router.js)
+#### [NEW] [Router.js](file:///c:/Users/reyda/OneDrive/Documentos/Invitación/core/Router.js)
 Gestor de navegación interna con soporte para anclas y scroll suave.
 ```javascript
 import Animation from './Animation.js';
@@ -319,7 +319,7 @@ export default class Router {
 }
 ```
 
-#### [NEW] [Animation.js](file:///c:/Users/reyda/OneDrive/Documentos/Invitación/boda-web/core/Animation.js)
+#### [NEW] [Animation.js](file:///c:/Users/reyda/OneDrive/Documentos/Invitación/core/Animation.js)
 ```javascript
 export default class Animation {
   static scrollTo(selector) {
@@ -331,7 +331,7 @@ export default class Animation {
 }
 ```
 
-#### [NEW] [Observer.js](file:///c:/Users/reyda/OneDrive/Documentos/Invitación/boda-web/core/Observer.js)
+#### [NEW] [Observer.js](file:///c:/Users/reyda/OneDrive/Documentos/Invitación/core/Observer.js)
 ```javascript
 export default class Observer {
   static createRevealObserver(options = {}) {
@@ -353,7 +353,7 @@ export default class Observer {
 }
 ```
 
-#### [NEW] [Helpers.js](file:///c:/Users/reyda/OneDrive/Documentos/Invitación/boda-web/core/Helpers.js)
+#### [NEW] [Helpers.js](file:///c:/Users/reyda/OneDrive/Documentos/Invitación/core/Helpers.js)
 ```javascript
 export function formatDate(dateString) {
   if (!dateString) return '';
@@ -415,7 +415,7 @@ export function updateSEO(seoConfig) {
 
 ### C. Servicios y PWA Manifest
 
-#### [NEW] [whatsapp.js](file:///c:/Users/reyda/OneDrive/Documentos/Invitación/boda-web/services/whatsapp.js)
+#### [NEW] [whatsapp.js](file:///c:/Users/reyda/OneDrive/Documentos/Invitación/services/whatsapp.js)
 ```javascript
 export default class WhatsAppService {
   static generateLink(phoneNumber, message) {
@@ -425,7 +425,7 @@ export default class WhatsAppService {
 }
 ```
 
-#### [NEW] [manifest.json](file:///c:/Users/reyda/OneDrive/Documentos/Invitación/boda-web/manifest.json)
+#### [NEW] [manifest.json](file:///c:/Users/reyda/OneDrive/Documentos/Invitación/manifest.json)
 ```json
 {
   "name": "Boda de Angélica y Daniel",
@@ -454,7 +454,7 @@ export default class WhatsAppService {
 
 ### D. Organización CSS y HTML
 
-#### [MODIFY] [index.html](file:///c:/Users/reyda/OneDrive/Documentos/Invitación/boda-web/index.html)
+#### [MODIFY] [index.html](file:///c:/Users/reyda/OneDrive/Documentos/Invitación/index.html)
 ```html
 <!DOCTYPE html>
 <html lang="es">
@@ -482,7 +482,7 @@ export default class WhatsAppService {
 
 ### E. Componentes
 
-#### [NEW] [index.js (Hero)](file:///c:/Users/reyda/OneDrive/Documentos/Invitación/boda-web/components/Hero/index.js)
+#### [NEW] [index.js (Hero)](file:///c:/Users/reyda/OneDrive/Documentos/Invitación/components/Hero/index.js)
 ```javascript
 import Component from '../../core/Component.js';
 import { formatDate } from '../../core/Helpers.js';
@@ -528,7 +528,7 @@ export default class Hero extends Component {
 }
 ```
 
-#### [NEW] [index.js (Intro)](file:///c:/Users/reyda/OneDrive/Documentos/Invitación/boda-web/components/Intro/index.js)
+#### [NEW] [index.js (Intro)](file:///c:/Users/reyda/OneDrive/Documentos/Invitación/components/Intro/index.js)
 ```javascript
 import Component from '../../core/Component.js';
 import Observer from '../../core/Observer.js';
@@ -570,7 +570,7 @@ export default class Intro extends Component {
 
 ### F. Punto de Entrada (JS)
 
-#### [MODIFY] [main.js](file:///c:/Users/reyda/OneDrive/Documentos/Invitación/boda-web/assets/js/main.js)
+#### [MODIFY] [main.js](file:///c:/Users/reyda/OneDrive/Documentos/Invitación/assets/js/main.js)
 Instancia `App` y registra componentes de manera declarativa y modular.
 ```javascript
 import App from '../../core/App.js';
@@ -595,7 +595,7 @@ document.addEventListener('DOMContentLoaded', () => {
 ## 3. Plan de Verificación
 
 1. **Lanzar Servidor Local**:
-   - Ejecutar `npx -y live-server boda-web` para validar localmente en el navegador.
+   - Ejecutar `npx -y live-server ` para validar localmente en el navegador.
 2. **Validar Navegación y URL Hashes**:
    - Escribir manualmente `#intro` en la barra de direcciones del navegador y comprobar que la página realiza un scroll suave hacia el componente Intro.
 3. **Validar SEO y Metadatos Dinámicos**:

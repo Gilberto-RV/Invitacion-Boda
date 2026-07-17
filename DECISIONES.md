@@ -75,3 +75,10 @@ Implementación de un EventBus nativo para desacoplar por completo la comunicaci
 
 ### Router de Anclas
 Implementación de un Router interno hash-based para gestionar scroll suave, deep linking y navegación por anclas sin recargar el navegador.
+
+---
+
+## Estructura de Despliegue en GitHub Pages (17 Julio 2026)
+
+### Publicación desde la Raíz del Repositorio
+Se eliminó la carpeta `boda-web/` y se movió el código y los recursos a la raíz del repositorio. Esto permite que GitHub Pages publique la invitación en `https://usuario.github.io/repositorio/` de forma nativa sin requerir el sufijo `/boda-web/` en la URL pública, reduciendo la fricción para los invitados y facilitando el uso de rutas relativas compatibles.
