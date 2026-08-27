@@ -1,15 +1,15 @@
-import App from '../../core/App.js';
-import Hero from '../../components/Hero/index.js';
-import Intro from '../../components/Intro/index.js';
-import Countdown from '../../components/Countdown/index.js';
-import Parents from '../../components/Parents/index.js';
-import Sponsors from '../../components/Sponsors/index.js';
-import Entertainment from '../../components/Entertainment/index.js';
-import Gallery from '../../components/Gallery/index.js';
-import Video from '../../components/Video/index.js';
-import Event from '../../components/Event/index.js';
-import RSVP from '../../components/RSVP/index.js';
-import Footer from '../../components/Footer/index.js';
+import App from '../../core/App.js?v=20260827_02';
+import Hero from '../../components/Hero/index.js?v=20260827_02';
+import Intro from '../../components/Intro/index.js?v=20260827_02';
+import Countdown from '../../components/Countdown/index.js?v=20260827_02';
+import Parents from '../../components/Parents/index.js?v=20260827_02';
+import Sponsors from '../../components/Sponsors/index.js?v=20260827_02';
+import Entertainment from '../../components/Entertainment/index.js?v=20260827_02';
+import Gallery from '../../components/Gallery/index.js?v=20260827_02';
+import Video from '../../components/Video/index.js?v=20260827_02';
+import Event from '../../components/Event/index.js?v=20260827_02';
+import RSVP from '../../components/RSVP/index.js?v=20260827_02';
+import Footer from '../../components/Footer/index.js?v=20260827_02';
 
 // Instanciar la aplicación
 const app = new App();

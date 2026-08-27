@@ -8,6 +8,18 @@
   100% { transform: translateY(100%); }
 }
 
+/* Animaciones reveal al hacer scroll */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: var(--transition-slow);
+}
+
+.reveal-on-scroll.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* Animaciones de caída de pétalos */
 @keyframes fall {
   0% {

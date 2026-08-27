@@ -1,22 +1,22 @@
 /* Importar tokens del sistema de diseño (Theme) */
-@import '../../theme/colors.css';
-@import '../../theme/typography.css';
-@import '../../theme/spacing.css';
-@import '../../theme/shadows.css';
-@import '../../theme/animations.css';
+@import '../../theme/colors.css?v=20260827_02';
+@import '../../theme/typography.css?v=20260827_02';
+@import '../../theme/spacing.css?v=20260827_02';
+@import '../../theme/shadows.css?v=20260827_02';
+@import '../../theme/animations.css?v=20260827_02';
 
 /* Importar estilos específicos de cada componente registrado */
-@import '../../components/Hero/styles.css';
-@import '../../components/Intro/styles.css';
-@import '../../components/Countdown/styles.css';
-@import '../../components/Parents/styles.css';
-@import '../../components/Sponsors/styles.css';
-@import '../../components/Entertainment/styles.css';
-@import '../../components/Gallery/styles.css';
-@import '../../components/Video/styles.css';
-@import '../../components/Event/styles.css';
-@import '../../components/RSVP/styles.css';
-@import '../../components/Footer/styles.css';
+@import '../../components/Hero/styles.css?v=20260827_02';
+@import '../../components/Intro/styles.css?v=20260827_02';
+@import '../../components/Countdown/styles.css?v=20260827_02';
+@import '../../components/Parents/styles.css?v=20260827_02';
+@import '../../components/Sponsors/styles.css?v=20260827_02';
+@import '../../components/Entertainment/styles.css?v=20260827_02';
+@import '../../components/Gallery/styles.css?v=20260827_02';
+@import '../../components/Video/styles.css?v=20260827_02';
+@import '../../components/Event/styles.css?v=20260827_02';
+@import '../../components/RSVP/styles.css?v=20260827_02';
+@import '../../components/Footer/styles.css?v=20260827_02';
 
 /* Resets y reglas globales */
 * {
