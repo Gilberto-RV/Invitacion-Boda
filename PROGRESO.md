@@ -95,7 +95,7 @@
 
 ### Reorganización Estructural para GitHub Pages
 
-✔ Se eliminó la carpeta `boda-web/` y se movieron todos los archivos y carpetas a la raíz del repositorio usando `git mv` para preservar al 100% el historial de Git.
+✔ Se eliminó la carpeta `boda-web/` y se movió todos los archivos y carpetas a la raíz del repositorio usando `git mv` para preservar al 100% el historial de Git.
 
 ✔ Se actualizaron y limpiaron todas las referencias a `boda-web` en la documentación del sistema de diseño, plan de desarrollo, README centralizado y scripts auxiliares.
 
@@ -103,12 +103,32 @@
 
 ---
 
-## Pendientes
+## 27 Agosto 2026
 
-✔ Todos los componentes base y plugins interactivos programados han sido construidos con éxito.
+### Optimización Mobile, Galería Simétrica, Video y Amenización
+
+✔ Se rediseñó la experiencia del componente **Hero** en pantallas móviles:
+  - Implementación de un fondo ambiental envolvente con desenfoque suave.
+  - Inclusión de marco fotográfico centrado que muestra a Daniel y Angélica completos, sin recortes en sus rostros.
+  - Excelente legibilidad tipográfica y preservación de la vista panorámica en PC/Escritorio.
+
+✔ Se implementó el componente **Video** (`components/Video/`):
+  - Integración del archivo `assets/img/gallery/v1.mp4`.
+  - Reproductor HTML5 responsivo con controles, `playsinline` y diseño con borde y sombras elegantes acorde a la paleta del evento.
+  - Registro de animaciones y soporte dinámico desde `wedding.json`.
+
+✔ Se perfeccionó la **Galería** de fotos:
+  - Integración de `assets/img/gallery/im11.jpeg`, completando 8 imágenes seleccionadas.
+  - Cuadrícula perfectamente simétrica (4 filas x 2 columnas) en teléfonos móviles, eliminando el espacio en blanco inferior.
+
+✔ Se implementó el componente **Entertainment** (`components/Entertainment/`):
+  - Sección dedicada para la amenización de la boda con mención a **Natalia Guerrero Pérez**.
+  - Estructura modular, parametrizada desde `wedding.json` y coordinada visualmente con los componentes de Padrinos y Padres.
+
+✔ Se actualizaron los índices principales (`assets/js/main.js`, `assets/css/styles.css`) y la documentación técnica del proyecto (`CONTEXTO.md`, `DECISIONES.md`, `PROGRESO.md`).
 
 ---
 
 ## Próxima etapa
 
-- Monitoreo del correcto despliegue final en la URL pública de producción en GitHub Pages.
+- Pruebas finales de usuario y verificación de visualización en diferentes dispositivos.

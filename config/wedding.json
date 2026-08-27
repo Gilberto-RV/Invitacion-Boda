@@ -55,6 +55,14 @@
     "gallery": {
       "title": "Nuestros Momentos"
     },
+    "video": {
+      "title": "Nuestra Historia",
+      "subtitle": "Un momento especial que queremos compartir"
+    },
+    "entertainment": {
+      "title": "Amenización Musical",
+      "subtitle": "Para amenización en nuestra Boda"
+    },
     "event": {
       "title": "Lugar y Horarios",
       "mapsButton": "Ver en Google Maps"
@@ -96,22 +104,25 @@
       "lazoBiblia": ["Adriana Azucena Mancebo Suárez", "Alejandro Sandoval Fierro"],
       "anillos": ["Ma. Guadalupe Saldaña Zamora"],
       "arras": ["Verla Lucía Cruz Sánchez", "José David Vásquez Cruz"]
-    }
+    },
+    "entertainment": [
+      "Natalia Guerrero Pérez"
+    ]
   },
   "assets": {
     "heroBg": "assets/img/hero/im1.jpg",
     "introBg": "assets/img/gallery/im2.jpg",
+    "video": "assets/img/gallery/v1.mp4",
     "audio": "",
     "gallery": [
-      "assets/img/gallery/im2.jpg",
-      "assets/img/gallery/im3.jpg",
       "assets/img/gallery/im4.jpg",
-      "assets/img/gallery/im5.jpg",
+      "assets/img/gallery/im3.jpg",
       "assets/img/gallery/im6.jpg",
       "assets/img/gallery/im7.jpg",
       "assets/img/gallery/im8.jpg",
       "assets/img/gallery/im9.jpg",
-      "assets/img/gallery/im10.jpg"
+      "assets/img/gallery/im10.jpg",
+      "assets/img/gallery/im11.jpeg"
     ]
   },
   "features": {

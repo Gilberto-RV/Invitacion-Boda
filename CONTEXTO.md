@@ -115,6 +115,12 @@ José David Vásquez Cruz
 
 ---
 
+## Amenización en nuestra Boda
+
+Natalia Guerrero Pérez
+
+---
+
 ## Fecha
 
 27 de noviembre de 2026
@@ -143,11 +149,11 @@ Posteriormente será sustituido por el número definitivo.
 
 ## Recursos disponibles
 
-Aproximadamente 30 fotografías.
+Aproximadamente 30 fotografías (8 seleccionadas para la galería simétrica + 1 principal de novios + 1 de fondo historia).
 
-Paleta de colores.
+Paleta de colores oficial.
 
-Video pendiente.
+Video: `assets/img/gallery/v1.mp4` integrado.
 
 Música pendiente.
 

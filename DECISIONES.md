@@ -82,3 +82,19 @@ Implementación de un Router interno hash-based para gestionar scroll suave, dee
 
 ### Publicación desde la Raíz del Repositorio
 Se eliminó la carpeta `boda-web/` y se movió el código y los recursos a la raíz del repositorio. Esto permite que GitHub Pages publique la invitación en `https://usuario.github.io/repositorio/` de forma nativa sin requerir el sufijo `/boda-web/` en la URL pública, reduciendo la fricción para los invitados y facilitando el uso de rutas relativas compatibles.
+
+---
+
+## Optimización Mobile First y Nuevos Componentes (27 Agosto 2026)
+
+### Composición Adaptativa del Hero
+Se detectó que la fotografía panorámica horizontal en pantallas móviles recortaba el rostro del novio al usar `background-size: cover` estirado a 100vh. Se decidió implementar una composición adaptativa: en móviles se utiliza un fondo ambiental con desenfoque suave y un marco fotográfico estilizado con relación de aspecto que muestra a ambos novios sin cortes, con la tipografía y fecha legiblemente ubicadas. En pantallas de escritorio (PC) se mantiene la vista panorámica completa.
+
+### Sección de Amenización Musical
+Se creó el componente modular `Entertainment` parametrizado desde `wedding.json` para reconocer la participación de Natalia Guerrero Pérez en la amenización de la boda.
+
+### Sección de Video Responsivo
+Se creó el componente `Video` para integrar el archivo multimedia `assets/img/gallery/v1.mp4` con reproducción HTML5 controlada, `playsinline` y diseño armónico con la temática botánica.
+
+### Simetría en Cuadrícula de Galería
+Se integró la imagen `im11.jpeg` alcanzando 8 imágenes pares para garantizar que en dispositivos móviles (2 columnas) no quede ningún espacio vacío o asimétrico en la última fila.
