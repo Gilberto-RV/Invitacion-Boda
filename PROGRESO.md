@@ -119,7 +119,9 @@
 
 ✔ Se perfeccionó la **Galería** de fotos:
   - Integración de `assets/img/gallery/im11.jpeg`, completando 8 imágenes seleccionadas.
-  - Cuadrícula perfectamente simétrica (4 filas x 2 columnas) en teléfonos móviles, eliminando el espacio en blanco inferior.
+  - Cuadrícula perfectamente simétrica (4 filas x 2 columnas en teléfonos móviles, y 2 filas x 4 columnas en PC / Tablets), garantizando simetría total en cualquier dispositivo.
+
+✔ Se agregaron identificadores de versión (cache-busters `?v=...`) en `index.html`, `styles.css` y `main.js` para forzar a los navegadores móviles y de escritorio a descargar inmediatamente los componentes nuevos y estilos actualizados sin retener versiones cacheadas anteriores.
 
 ✔ Se implementó el componente **Entertainment** (`components/Entertainment/`):
   - Sección dedicada para la amenización de la boda con mención a **Natalia Guerrero Pérez**.
