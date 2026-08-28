@@ -96,6 +96,7 @@ Esperanza Corona Ordoñez
 ### Velación
 
 Carlos Mayllen Corona
+Adriana Castillo Moreno
 
 ### Lazo y Biblia
 
@@ -113,17 +114,25 @@ Verla Lucía Cruz Sánchez
 
 José David Vásquez Cruz
 
----
+### Dama de Honor y Ramo
 
-## Amenización en nuestra Boda
-
-Natalia Guerrero Pérez
+Cynthia Mayeli Romero Vázquez
 
 ---
 
-## Fecha
+## Para amenizar el momento de la boda
+
+- El Legado de los Dukes en Acción
+- Natalia Guerrero
+- Y DJ Profesional
+
+---
+
+## Fecha y Horarios
 
 27 de noviembre de 2026
+- Ceremonia de Unión: 16:00
+- Recepción y Banquete: 19:30
 
 ---
 

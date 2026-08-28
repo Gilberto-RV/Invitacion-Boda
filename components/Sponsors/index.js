@@ -9,9 +9,10 @@ export default class Sponsors extends Component {
     const renderSponsorGroup = (labelKey, peopleArray) => {
       if (!peopleArray || peopleArray.length === 0) return '';
       const list = peopleArray.map(name => `<span class="sponsor-name">${escapeHtml(name)}</span>`).join('');
+      const roleLabel = texts.sponsors && texts.sponsors[labelKey] ? texts.sponsors[labelKey] : labelKey;
       return `
         <div class="sponsor-card">
-          <span class="sponsor-role">${escapeHtml(texts.sponsors[labelKey])}</span>
+          <span class="sponsor-role">${escapeHtml(roleLabel)}</span>
           <div class="sponsor-names-list">
             ${list}
           </div>
@@ -19,16 +20,17 @@ export default class Sponsors extends Component {
       `;
     };
 
+    const sponsorCards = people && people.sponsors
+      ? Object.keys(people.sponsors).map(key => renderSponsorGroup(key, people.sponsors[key])).join('')
+      : '';
+
     return `
       <section class="sponsors-section" id="sponsors">
         <div class="sponsors-container reveal-on-scroll">
           <h2 class="sponsors-title">${escapeHtml(texts.sponsors.title)}</h2>
           <div class="sponsors-divider"></div>
           <div class="sponsors-grid">
-            ${renderSponsorGroup('velacion', people.sponsors.velacion)}
-            ${renderSponsorGroup('lazoBiblia', people.sponsors.lazoBiblia)}
-            ${renderSponsorGroup('anillos', people.sponsors.anillos)}
-            ${renderSponsorGroup('arras', people.sponsors.arras)}
+            ${sponsorCards}
           </div>
         </div>
       </section>

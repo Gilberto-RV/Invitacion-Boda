@@ -3,7 +3,7 @@
     "bride": "Angélica",
     "groom": "Daniel",
     "date": "2026-11-27",
-    "time": "18:00:00",
+    "time": "16:00:00",
     "location": {
       "name": "Casa Lu",
       "address": "Puerto Morelos, Cancún",
@@ -12,7 +12,7 @@
     "details": {
       "ceremony": {
         "title": "Ceremonia de Unión",
-        "time": "18:00",
+        "time": "16:00",
         "description": "Nuestra unión frente al mar en Puerto Morelos."
       },
       "reception": {
@@ -56,12 +56,12 @@
       "title": "Nuestros Momentos"
     },
     "video": {
-      "title": "Nuestra Historia",
-      "subtitle": "Un momento especial que queremos compartir"
+      "title": "Un Momento Especial",
+      "subtitle": "Un instante que dura para siempre"
     },
     "entertainment": {
       "title": "Amenización Musical",
-      "subtitle": "Para amenización en nuestra Boda"
+      "subtitle": "Para amenizar el momento de la boda"
     },
     "event": {
       "title": "Lugar y Horarios",
@@ -85,7 +85,8 @@
       "velacion": "Velación",
       "lazoBiblia": "Lazo y Biblia",
       "anillos": "Anillos",
-      "arras": "Arras"
+      "arras": "Arras",
+      "damaHonorRamo": "Dama de Honor y Ramo"
     },
     "footer": {
       "thankYou": "¡Gracias por formar parte de nuestra vida!"
@@ -100,13 +101,16 @@
       "groom": ["Esperanza Corona Ordoñez"]
     },
     "sponsors": {
-      "velacion": ["Carlos Mayllen Corona"],
+      "velacion": ["Carlos Mayllen Corona", "Adriana Castillo Moreno"],
       "lazoBiblia": ["Adriana Azucena Mancebo Suárez", "Alejandro Sandoval Fierro"],
       "anillos": ["Ma. Guadalupe Saldaña Zamora"],
-      "arras": ["Verla Lucía Cruz Sánchez", "José David Vásquez Cruz"]
+      "arras": ["Verla Lucía Cruz Sánchez", "José David Vásquez Cruz"],
+      "damaHonorRamo": ["Cynthia Mayeli Romero Vázquez"]
     },
     "entertainment": [
-      "Natalia Guerrero Pérez"
+      "El Legado de los Dukes en Acción",
+      "Natalia Guerrero",
+      "Y DJ Profesional"
     ]
   },
   "assets": {

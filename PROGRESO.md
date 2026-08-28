@@ -124,8 +124,17 @@
 ✔ Se agregaron identificadores de versión (cache-busters `?v=...`) en `index.html`, `styles.css` y `main.js` para forzar a los navegadores móviles y de escritorio a descargar inmediatamente los componentes nuevos y estilos actualizados sin retener versiones cacheadas anteriores.
 
 ✔ Se implementó el componente **Entertainment** (`components/Entertainment/`):
-  - Sección dedicada para la amenización de la boda con mención a **Natalia Guerrero Pérez**.
+  - Sección dedicada para la amenización de la boda con mención a **El Legado de los Dukes en Acción**, **Natalia Guerrero** y **Y DJ Profesional**.
   - Estructura modular, parametrizada desde `wedding.json` y coordinada visualmente con los componentes de Padrinos y Padres.
+
+✔ Se actualizaron los Padrinos y Cortejo:
+  - Adición de **Adriana Castillo Moreno** en Velación junto a Carlos Mayllen Corona.
+  - Inclusión de **Cynthia Mayeli Romero Vázquez** en el nuevo rol de **Dama de Honor y Ramo**.
+  - Maquetación flexible y auto-centrada en `Sponsors` para distribuir armónicamente cualquier número de padrinos.
+
+✔ Se actualizó el horario de la **Ceremonia de Unión** a las **16:00 hrs**.
+
+✔ Se corrigió el título duplicado de la sección multimedia renombrándola a **"Un Momento Especial"** para diferenciarla claramente de la historia de la pareja.
 
 ✔ Se actualizaron los índices principales (`assets/js/main.js`, `assets/css/styles.css`) y la documentación técnica del proyecto (`CONTEXTO.md`, `DECISIONES.md`, `PROGRESO.md`).
 
