@@ -110,7 +110,7 @@ Ma. Guadalupe Saldaña Zamora
 
 ### Arras
 
-Verla Lucía Cruz Sánchez
+Vera Lucía Cruz Sánchez
 
 José David Vásquez Cruz
 

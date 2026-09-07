@@ -132,7 +132,7 @@ Consolida todos los datos del evento, textos, configuraciones y SEO.
       "velacion": ["Carlos Mayllen Corona"],
       "lazoBiblia": ["Adriana Azucena Mancebo Suárez", "Alejandro Sandoval Fierro"],
       "anillos": ["Ma. Guadalupe Saldaña Zamora"],
-      "arras": ["Verla Lucía Cruz Sánchez", "José David Vásquez Cruz"]
+      "arras": ["Vera Lucía Cruz Sánchez", "José David Vásquez Cruz"]
     }
   },
   "assets": {
