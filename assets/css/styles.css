@@ -8,7 +8,7 @@
 /* Importar estilos específicos de cada componente registrado */
 @import '../../components/Hero/styles.css?v=20260827_03';
 @import '../../components/Intro/styles.css?v=20260827_03';
-@import '../../components/Countdown/styles.css?v=20260827_03';
+@import '../../components/Countdown/styles.css?v=20260907_01';
 @import '../../components/Parents/styles.css?v=20260827_03';
 @import '../../components/Sponsors/styles.css?v=20260827_03';
 @import '../../components/Entertainment/styles.css?v=20260827_03';
