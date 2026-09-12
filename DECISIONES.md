@@ -48,11 +48,12 @@ Se utilizarán imágenes optimizadas para WebP.
 
 ## Confirmación
 
-WhatsApp mediante enlace personalizado.
+WhatsApp mediante enlace personalizado y flujo de envío doble:
 
-Durante el desarrollo utilizará el número del desarrollador.
+- **Daniel (Novio):** +52 246 102 6338 (`2461026338`)
+- **Angélica (Novia):** +52 246 325 9593 (`2463259593`)
 
-Posteriormente será actualizado.
+Al confirmar asistencia, el sistema abre la conversación con Daniel y despliega un modal elegante guiando al invitado a enviar también la confirmación a Angélica, asegurando que ambos novios reciban la notificación sin problemas de bloqueo de ventanas emergentes.
 
 ---
 

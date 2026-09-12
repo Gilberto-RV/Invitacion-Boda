@@ -140,6 +140,24 @@
 
 ---
 
+## 12 Septiembre 2026
+
+### Actualización de Números WhatsApp y Confirmación Doble
+
+✔ Se configuraron los números definitivos de los novios en `config/wedding.json`:
+  - **Daniel (Novio):** `+52 246 102 6338` (`2461026338`)
+  - **Angélica (Novia):** `+52 246 325 9593` (`2463259593`)
+
+✔ Se enriqueció `services/whatsapp.js`:
+  - Detección automática de números a 10 dígitos (formato estándar de México) para anteponer el prefijo de país `52` de forma infalible.
+
+✔ Se implementó el flujo de confirmación doble en `components/RSVP/index.js` y `components/RSVP/styles.css`:
+  - Apertura automática del chat de WhatsApp para Daniel.
+  - Despliegue de un modal de confirmación con diseño nupcial refinado, informando al invitado del estado y proporcionando un botón destacado para notificar a Angélica.
+  - Marcado dinámico del estado de entrega ("Mensaje abierto") y mensaje de confirmación de éxito tras notificar a ambos.
+
+---
+
 ## Próxima etapa
 
 - Pruebas finales de usuario y verificación de visualización en diferentes dispositivos.

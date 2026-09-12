@@ -8,7 +8,7 @@ import Entertainment from '../../components/Entertainment/index.js?v=20260827_03
 import Gallery from '../../components/Gallery/index.js?v=20260827_03';
 import Video from '../../components/Video/index.js?v=20260827_03';
 import Event from '../../components/Event/index.js?v=20260827_03';
-import RSVP from '../../components/RSVP/index.js?v=20260827_03';
+import RSVP from '../../components/RSVP/index.js?v=20260912_01';
 import Footer from '../../components/Footer/index.js?v=20260827_03';
 
 // Instanciar la aplicación

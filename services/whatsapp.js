@@ -6,7 +6,11 @@ export default class WhatsAppService {
    * @returns {string} Enlace listo para usar
    */
   static generateLink(phoneNumber, message) {
-    const cleanNumber = phoneNumber.replace(/[^0-9]/g, '');
+    let cleanNumber = (phoneNumber || '').toString().replace(/[^0-9]/g, '');
+    // Si tiene 10 dígitos (formato estándar México), anteponer código de país 52
+    if (cleanNumber.length === 10) {
+      cleanNumber = `52${cleanNumber}`;
+    }
     return `https://wa.me/${cleanNumber}?text=${encodeURIComponent(message)}`;
   }
 }

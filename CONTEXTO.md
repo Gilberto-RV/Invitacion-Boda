@@ -148,11 +148,10 @@ https://maps.app.goo.gl/fnfWZoRzMWCpLbqu9
 
 ## Confirmación
 
-Durante el desarrollo todas las confirmaciones serán enviadas al número:
+Las confirmaciones se envían como mensaje doble a ambos novios:
 
-+52 241 327 3836
-
-Posteriormente será sustituido por el número definitivo.
+- **Daniel (Novio):** +52 246 102 6338 (`2461026338`)
+- **Angélica (Novia):** +52 246 325 9593 (`2463259593`)
 
 ---
 
