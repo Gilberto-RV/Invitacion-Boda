@@ -146,12 +146,18 @@ https://maps.app.goo.gl/fnfWZoRzMWCpLbqu9
 
 ---
 
-## Confirmación
+## Mesa de Regalos (Lluvia de Sobres)
 
-Las confirmaciones se envían como mensaje doble a ambos novios:
+Sección ubicada inmediatamente después de la ubicación y Google Maps:
+- Mensaje afectuoso y sutil para la entrega de sobres con bendiciones en la recepción de la boda.
 
-- **Daniel (Novio):** +52 246 102 6338 (`2461026338`)
-- **Angélica (Novia):** +52 246 325 9593 (`2463259593`)
+---
+
+## Confirmación (RSVP)
+
+El usuario escoge directamente a quién enviar la confirmación con dos botones claros en la página principal:
+- **Confirmar con Angélica (Novia):** +52 246 325 9593 (`2463259593`)
+- **Confirmar con Daniel (Novio):** +52 246 102 6338 (`2461026338`)
 
 ---
 

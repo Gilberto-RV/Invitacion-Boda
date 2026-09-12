@@ -1,0 +1,121 @@
+.gifts-section {
+  padding: var(--spacing-section) var(--spacing-lg);
+  background-color: var(--color-ivory);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gifts-container {
+  max-width: 580px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gifts-badge {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--color-beige);
+  background-color: rgba(199, 164, 145, 0.15);
+  padding: 6px 16px;
+  border-radius: 50px;
+  margin-bottom: var(--spacing-sm);
+  border: 1px solid rgba(199, 164, 145, 0.3);
+}
+
+.gifts-title {
+  font-size: var(--font-size-h2);
+  color: var(--color-sage);
+  letter-spacing: 1px;
+}
+
+.gifts-divider {
+  width: 40px;
+  height: 1px;
+  background-color: var(--color-beige);
+  margin: var(--spacing-sm) auto var(--spacing-xl);
+}
+
+.gifts-card {
+  background-color: var(--color-white);
+  border: 1px solid rgba(199, 164, 145, 0.35);
+  border-radius: 20px;
+  padding: var(--spacing-xl) var(--spacing-lg);
+  box-shadow: 0 16px 36px rgba(44, 48, 46, 0.06);
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gifts-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 42px rgba(44, 48, 46, 0.09);
+}
+
+.gifts-icon-wrapper {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto var(--spacing-md);
+  border-radius: 50%;
+  background-color: rgba(145, 150, 130, 0.12);
+  color: var(--color-sage);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gifts-icon {
+  stroke: var(--color-sage);
+}
+
+.gifts-quote {
+  font-family: var(--font-serif);
+  font-size: 1.125rem;
+  line-height: 1.75;
+  color: var(--color-dark);
+  font-style: italic;
+  margin-bottom: var(--spacing-lg);
+  padding: 0 var(--spacing-xs);
+}
+
+.gifts-note-box {
+  background-color: rgba(236, 225, 221, 0.4);
+  border: 1px dashed rgba(199, 164, 145, 0.5);
+  border-radius: 12px;
+  padding: var(--spacing-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  text-align: left;
+}
+
+.gifts-note-icon {
+  font-size: 1.35rem;
+  flex-shrink: 0;
+}
+
+.gifts-note-text {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: var(--color-dark-light);
+  line-height: 1.5;
+}
+
+@media (max-width: 480px) {
+  .gifts-card {
+    padding: var(--spacing-lg) var(--spacing-md);
+  }
+
+  .gifts-quote {
+    font-size: 1.02rem;
+  }
+}

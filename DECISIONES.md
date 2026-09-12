@@ -46,14 +46,19 @@ Se utilizarán imágenes optimizadas para WebP.
 
 ---
 
-## Confirmación
+## Mesa de Regalos
 
-WhatsApp mediante enlace personalizado y flujo de envío doble:
+Modalidad de "Lluvia de Sobres" situada tras los detalles de ubicación/Google Maps. Presentación con redacción respetuosa, sobria y cálida que prioriza la presencia de los invitados y señala el buzón en la recepción.
 
-- **Daniel (Novio):** +52 246 102 6338 (`2461026338`)
-- **Angélica (Novia):** +52 246 325 9593 (`2463259593`)
+---
 
-Al presionar el botón de confirmación, se disparan directamente ambos enlaces de WhatsApp (Daniel y Angélica) sin modales ni pantallas intermedias, disponiendo de accesos sutiles de respaldo debajo del botón por si el navegador bloquea alguna ventana.
+## Confirmación (RSVP)
+
+WhatsApp mediante dos botones directos en el formulario principal:
+- **Confirmar con Angélica (Novia):** `+52 246 325 9593`
+- **Confirmar con Daniel (Novio):** `+52 246 102 6338`
+
+El usuario selecciona a quién remitir su confirmación con un toque directo sin modales emergentes ni fricciones.
 
 ---
 

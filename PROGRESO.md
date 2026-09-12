@@ -151,10 +151,20 @@
 ✔ Se enriqueció `services/whatsapp.js`:
   - Detección automática de números a 10 dígitos (formato estándar de México) para anteponer el prefijo de país `52` de forma infalible.
 
-✔ Se implementó el flujo de confirmación doble directa (Opción 4) en `components/RSVP/index.js` y `components/RSVP/styles.css`:
-  - Apertura directa de ambos enlaces de WhatsApp para Daniel y Angélica al pulsar el botón principal.
-  - Eliminación total de modales emergentes intrusivos.
-  - Inclusión de un bloque de feedback sutil integrado debajo del botón para reenviar individualmente a cualquiera de los dos en caso de que el navegador bloquee la segunda pestaña.
+### Mesa de Regalos y Botones Duales en RSVP
+
+✔ Se creó el nuevo componente **Gifts** (`components/Gifts/index.js` y `styles.css`) para la **Mesa de Regalos (Lluvia de Sobres)**:
+  - Posicionada inmediatamente después de la ubicación y Google Maps (`Event`).
+  - Redacción combinada cálida y elegante que resalta el valor de la compañía de los invitados y señala el buzón de sobres en la recepción.
+  - Diseño con tarjeta envolvente, ícono estilizado de sobre, tipografía cuidada y animaciones al scroll.
+
+✔ Se implementaron los dos botones de confirmación directa en el formulario **RSVP**:
+  - `[ 💬 Confirmar con Angélica (Novia) ]`
+  - `[ 💬 Confirmar con Daniel (Novio) ]`
+  - Eliminación total de modales o pantallas emergentes, permitiendo al invitado elegir a quién remitir su confirmación con un toque directo.
+  - Validación nativa de formulario antes del envío.
+
+✔ Se actualizaron las versiones de caché a `?v=20260912_03` en `index.html`, `styles.css` y `main.js`.
 
 ---
 

@@ -14,9 +14,10 @@
 @import '../../components/Entertainment/styles.css?v=20260827_03';
 @import '../../components/Gallery/styles.css?v=20260827_03';
 @import '../../components/Video/styles.css?v=20260827_03';
-@import '../../components/Event/styles.css?v=20260827_03';
-@import '../../components/RSVP/styles.css?v=20260912_02';
-@import '../../components/Footer/styles.css?v=20260827_03';
+@import '../../components/Event/styles.css?v=20260912_03';
+@import '../../components/Gifts/styles.css?v=20260912_03';
+@import '../../components/RSVP/styles.css?v=20260912_03';
+@import '../../components/Footer/styles.css?v=20260912_03';
 
 /* Resets y reglas globales */
 * {

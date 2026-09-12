@@ -71,13 +71,20 @@
       "title": "Lugar y Horarios",
       "mapsButton": "Ver en Google Maps"
     },
+    "gifts": {
+      "title": "Mesa de Regalos",
+      "badge": "Lluvia de Sobres",
+      "message": "Dios nos regaló el amor y ustedes nos regalan su compañía. Su presencia es nuestro más grande regalo; pero si desean tener un detalle para el inicio de nuestro hogar, agradeceremos que sea en la modalidad de lluvia de sobres, la cual se encontrará en la recepción de la boda.",
+      "note": "Encontrarás un buzón especial en la recepción para depositar tu sobre con tus mejores deseos y bendiciones."
+    },
     "rsvp": {
       "title": "Confirmación de Asistencia",
       "subtitle": "Por favor, confírmanos tu asistencia antes del 30 de Octubre de 2026",
       "namePlaceholder": "Tu Nombre Completo",
       "confirmYes": "Sí, asistiré",
       "confirmNo": "No podré asistir",
-      "buttonText": "Confirmar asistencia"
+      "confirmBride": "Confirmar con Angélica",
+      "confirmGroom": "Confirmar con Daniel"
     },
     "parents": {
       "title": "Con la bendición de nuestros padres",

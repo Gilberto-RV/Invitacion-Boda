@@ -129,66 +129,102 @@
   color: var(--color-dark);
 }
 
-.rsvp-btn {
-  width: 100%;
-  margin-top: var(--spacing-md);
-}
-
-/* Feedback y accesos de respaldo directos (sin modal) */
-.rsvp-feedback-box {
-  margin-top: var(--spacing-md);
-  padding: var(--spacing-md);
-  background-color: rgba(145, 150, 130, 0.08);
-  border: 1px solid rgba(145, 150, 130, 0.25);
-  border-radius: 12px;
-  text-align: center;
-  animation: fadeIn 0.3s ease;
-}
-
-.rsvp-feedback-box.hidden {
-  display: none;
-}
-
-.rsvp-feedback-title {
+.rsvp-choose-hint {
   font-family: var(--font-sans);
-  font-size: 0.92rem;
-  font-weight: 500;
-  color: var(--color-sage-dark);
-  margin-bottom: 4px;
-}
-
-.rsvp-feedback-hint {
-  font-family: var(--font-sans);
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   color: var(--color-dark-light);
-  margin-bottom: var(--spacing-sm);
+  margin-top: var(--spacing-sm);
+  letter-spacing: 0.5px;
 }
 
-.rsvp-fallback-actions {
+.rsvp-dual-buttons {
   display: flex;
-  justify-content: center;
-  gap: var(--spacing-sm);
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-xs);
 }
 
-.rsvp-fallback-btn {
-  display: inline-flex;
+.btn-rsvp-dual {
+  display: flex;
   align-items: center;
-  gap: 6px;
-  font-family: var(--font-sans);
-  font-size: 0.8rem;
-  font-weight: 500;
-  color: var(--color-dark);
-  background-color: var(--color-white);
-  border: 1px solid rgba(199, 164, 145, 0.4);
-  padding: 8px 14px;
-  border-radius: 20px;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 18px;
+  border-radius: 50px;
+  border: 1px solid transparent;
+  cursor: pointer;
   text-decoration: none;
-  transition: all 0.2s ease;
+  transition: var(--transition-smooth);
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.rsvp-fallback-btn:hover {
-  background-color: rgba(145, 150, 130, 0.1);
-  border-color: var(--color-sage);
+.btn-rsvp-bride {
+  background-color: var(--color-sage);
+  color: var(--color-white);
+  box-shadow: 0 4px 14px rgba(145, 150, 130, 0.25);
+}
+
+.btn-rsvp-bride:hover {
+  background-color: var(--color-sage-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(145, 150, 130, 0.35);
+}
+
+.btn-rsvp-groom {
+  background-color: var(--color-white);
+  border: 1.5px solid var(--color-sage);
   color: var(--color-sage-dark);
+  box-shadow: 0 4px 14px rgba(44, 48, 46, 0.05);
+}
+
+.btn-rsvp-groom:hover {
+  background-color: rgba(145, 150, 130, 0.08);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(145, 150, 130, 0.2);
+}
+
+.btn-rsvp-icon {
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.btn-rsvp-content {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.btn-rsvp-name {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+.btn-rsvp-tag {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.85;
+}
+
+@media (min-width: 600px) {
+  .rsvp-dual-buttons {
+    flex-direction: row;
+    gap: var(--spacing-md);
+  }
+
+  .btn-rsvp-dual {
+    flex: 1;
+    padding: 14px 12px;
+  }
+
+  .btn-rsvp-content {
+    flex-direction: column;
+    gap: 2px;
+    align-items: center;
+  }
 }
