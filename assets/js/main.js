@@ -7,10 +7,10 @@ import Sponsors from '../../components/Sponsors/index.js?v=20260912_03';
 import Entertainment from '../../components/Entertainment/index.js?v=20260912_03';
 import Gallery from '../../components/Gallery/index.js?v=20260912_03';
 import Video from '../../components/Video/index.js?v=20260912_03';
-import Event from '../../components/Event/index.js?v=20260912_03';
-import Gifts from '../../components/Gifts/index.js?v=20260912_03';
-import RSVP from '../../components/RSVP/index.js?v=20260912_03';
-import Footer from '../../components/Footer/index.js?v=20260912_03';
+import Event from '../../components/Event/index.js?v=20260912_04';
+import Gifts from '../../components/Gifts/index.js?v=20260912_04';
+import RSVP from '../../components/RSVP/index.js?v=20260912_04';
+import Footer from '../../components/Footer/index.js?v=20260912_04';
 
 // Instanciar la aplicación
 const app = new App();

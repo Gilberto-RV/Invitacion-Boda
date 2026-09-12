@@ -86,6 +86,19 @@
   padding: 0 var(--spacing-xs);
 }
 
+.gifts-quote p {
+  margin-bottom: var(--spacing-sm);
+}
+
+.gifts-quote p:last-child {
+  margin-bottom: 0;
+}
+
+.gifts-quote-closing {
+  font-size: 1.05rem;
+  color: var(--color-dark-light);
+}
+
 .gifts-note-box {
   background-color: rgba(236, 225, 221, 0.4);
   border: 1px dashed rgba(199, 164, 145, 0.5);
@@ -94,13 +107,28 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: var(--spacing-sm);
+  gap: var(--spacing-md);
   text-align: left;
 }
 
 .gifts-note-icon {
-  font-size: 1.35rem;
+  font-size: 1.5rem;
   flex-shrink: 0;
+}
+
+.gifts-note-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.gifts-note-heading {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--color-beige);
 }
 
 .gifts-note-text {

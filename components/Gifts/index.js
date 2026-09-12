@@ -8,9 +8,12 @@ export default class Gifts extends Component {
     const gifts = texts.gifts || {
       title: 'Mesa de Regalos',
       badge: 'Lluvia de Sobres',
-      message: 'Dios nos regaló el amor y ustedes nos regalan su compañía. Su presencia es nuestro más grande regalo; pero si desean tener un detalle para el inicio de nuestro hogar, agradeceremos que sea en la modalidad de lluvia de sobres, la cual se encontrará en la recepción de la boda.',
-      note: 'Encontrarás un buzón especial en la recepción para depositar tu sobre con tus mejores deseos y bendiciones.'
+      message: 'El mejor regalo para nosotros será compartir este día tan especial a su lado. Si desean acompañarnos con un detalle, hemos elegido la tradición de la lluvia de sobres, que nos ayudará a comenzar esta nueva etapa juntos.\n\nCon mucho cariño, agradecemos cada muestra de amor y buenos deseos.',
+      noteTitle: 'Lluvia de sobres',
+      note: 'En la recepción encontrarán un buzón donde podrán depositar su sobre con sus buenos deseos para los novios.'
     };
+
+    const paragraphs = (gifts.message || '').split('\n\n').filter(p => p.trim().length > 0);
 
     return `
       <section class="gifts-section" id="gifts">
@@ -27,15 +30,23 @@ export default class Gifts extends Component {
               </svg>
             </div>
 
-            <p class="gifts-quote">
-              “${escapeHtml(gifts.message)}”
-            </p>
+            <div class="gifts-quote">
+              ${paragraphs.map((p, index) => {
+                const isFirst = index === 0;
+                const isLast = index === paragraphs.length - 1;
+                const text = `${isFirst ? '“' : ''}${escapeHtml(p)}${isLast ? '”' : ''}`;
+                return `<p class="${index > 0 ? 'gifts-quote-closing' : ''}">${text}</p>`;
+              }).join('')}
+            </div>
 
             <div class="gifts-note-box">
               <span class="gifts-note-icon">💌</span>
-              <p class="gifts-note-text">
-                ${escapeHtml(gifts.note)}
-              </p>
+              <div class="gifts-note-content">
+                <strong class="gifts-note-heading">${escapeHtml(gifts.noteTitle || 'Lluvia de sobres')}</strong>
+                <p class="gifts-note-text">
+                  ${escapeHtml(gifts.note)}
+                </p>
+              </div>
             </div>
           </div>
         </div>

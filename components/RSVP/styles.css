@@ -159,29 +159,18 @@
   box-sizing: border-box;
 }
 
-.btn-rsvp-bride {
+.btn-rsvp-bride,
+.btn-rsvp-groom {
   background-color: var(--color-sage);
   color: var(--color-white);
   box-shadow: 0 4px 14px rgba(145, 150, 130, 0.25);
 }
 
-.btn-rsvp-bride:hover {
+.btn-rsvp-bride:hover,
+.btn-rsvp-groom:hover {
   background-color: var(--color-sage-dark);
   transform: translateY(-2px);
   box-shadow: 0 6px 18px rgba(145, 150, 130, 0.35);
-}
-
-.btn-rsvp-groom {
-  background-color: var(--color-white);
-  border: 1.5px solid var(--color-sage);
-  color: var(--color-sage-dark);
-  box-shadow: 0 4px 14px rgba(44, 48, 46, 0.05);
-}
-
-.btn-rsvp-groom:hover {
-  background-color: rgba(145, 150, 130, 0.08);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(145, 150, 130, 0.2);
 }
 
 .btn-rsvp-icon {
@@ -205,10 +194,13 @@
 
 .btn-rsvp-tag {
   font-family: var(--font-sans);
-  font-size: 0.72rem;
+  font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-  opacity: 0.85;
+  background-color: rgba(255, 255, 255, 0.22);
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-weight: 500;
 }
 
 @media (min-width: 600px) {

@@ -159,12 +159,16 @@
   - Diseño con tarjeta envolvente, ícono estilizado de sobre, tipografía cuidada y animaciones al scroll.
 
 ✔ Se implementaron los dos botones de confirmación directa en el formulario **RSVP**:
-  - `[ 💬 Confirmar con Angélica (Novia) ]`
-  - `[ 💬 Confirmar con Daniel (Novio) ]`
+  - `[ 💬 Confirmar con Angélica (Novia) ]` y `[ 💬 Confirmar con Daniel (Novio) ]`.
+  - Ambos botones estilizados en verde nupcial con texto blanco y pastilla de rol translúcida.
   - Eliminación total de modales o pantallas emergentes, permitiendo al invitado elegir a quién remitir su confirmación con un toque directo.
   - Validación nativa de formulario antes del envío.
 
-✔ Se actualizaron las versiones de caché a `?v=20260912_03` en `index.html`, `styles.css` y `main.js`.
+✔ Se actualizaron los textos definitivos de la **Mesa de Regalos**:
+  - Mensaje principal en dos párrafos destacando el valor de compartir el día y agradeciendo muestras de amor.
+  - Recuadro inferior titulado *"Lluvia de sobres"* con instrucción sobre el buzón en la recepción.
+
+✔ Se actualizaron las versiones de caché a `?v=20260912_04` en `index.html`, `styles.css` y `main.js`.
 
 ---
 
