@@ -134,252 +134,61 @@
   margin-top: var(--spacing-md);
 }
 
-/* Modal de confirmación doble */
-.rsvp-modal-overlay {
-  position: fixed;
-  inset: 0;
-  background-color: rgba(44, 48, 46, 0.65);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* Feedback y accesos de respaldo directos (sin modal) */
+.rsvp-feedback-box {
+  margin-top: var(--spacing-md);
   padding: var(--spacing-md);
-  z-index: 10000;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
-}
-
-.rsvp-modal-overlay.active {
-  opacity: 1;
-  visibility: visible;
-}
-
-.rsvp-modal-card {
-  background-color: var(--color-white);
-  border: 1px solid rgba(199, 164, 145, 0.35);
-  border-radius: 20px;
-  max-width: 440px;
-  width: 100%;
-  padding: var(--spacing-xl) var(--spacing-lg);
-  box-shadow: 0 25px 50px rgba(44, 48, 46, 0.2);
-  text-align: center;
-  position: relative;
-  transform: translateY(20px) scale(0.96);
-  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.rsvp-modal-overlay.active .rsvp-modal-card {
-  transform: translateY(0) scale(1);
-}
-
-.rsvp-modal-close {
-  position: absolute;
-  top: 14px;
-  right: 16px;
-  background: transparent;
-  border: none;
-  font-size: 26px;
-  line-height: 1;
-  color: var(--color-dark-light);
-  cursor: pointer;
-  padding: 4px;
-  transition: color 0.2s ease, transform 0.2s ease;
-}
-
-.rsvp-modal-close:hover {
-  color: var(--color-dark);
-  transform: scale(1.1);
-}
-
-.rsvp-modal-badge-icon {
-  width: 58px;
-  height: 58px;
-  margin: 0 auto var(--spacing-md);
-  border-radius: 50%;
-  background: rgba(145, 150, 130, 0.12);
-  color: var(--color-sage);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.rsvp-modal-title {
-  font-size: var(--font-size-h3);
-  color: var(--color-sage-dark);
-  margin-bottom: var(--spacing-xs);
-  letter-spacing: 0.5px;
-}
-
-.rsvp-modal-desc {
-  font-family: var(--font-sans);
-  font-size: 0.925rem;
-  color: var(--color-dark-light);
-  line-height: 1.5;
-  margin-bottom: var(--spacing-lg);
-}
-
-.rsvp-modal-desc strong {
-  color: var(--color-dark);
-}
-
-.rsvp-recipients-list {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-sm);
-  margin-bottom: var(--spacing-lg);
-}
-
-.rsvp-recipient-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 14px 16px;
-  border-radius: 12px;
-  border: 1px solid rgba(145, 150, 130, 0.2);
-  background-color: rgba(236, 225, 221, 0.25);
-  transition: all 0.25s ease;
-  text-align: left;
-}
-
-.rsvp-recipient-item.is-sent {
-  border-color: rgba(145, 150, 130, 0.4);
   background-color: rgba(145, 150, 130, 0.08);
+  border: 1px solid rgba(145, 150, 130, 0.25);
+  border-radius: 12px;
+  text-align: center;
+  animation: fadeIn 0.3s ease;
 }
 
-.rsvp-recipient-item.pending {
-  border-color: rgba(199, 164, 145, 0.5);
-  background-color: rgba(238, 207, 202, 0.18);
-  box-shadow: 0 4px 14px rgba(199, 164, 145, 0.15);
+.rsvp-feedback-box.hidden {
+  display: none;
 }
 
-.rsvp-recipient-info {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-
-.rsvp-recipient-role {
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  color: var(--color-beige);
-  font-weight: 600;
-}
-
-.rsvp-recipient-name {
-  font-family: var(--font-serif);
-  font-size: 1.15rem;
-  color: var(--color-dark);
-}
-
-.rsvp-recipient-status {
-  font-size: 0.78rem;
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
-
-.rsvp-recipient-status.sent {
-  color: var(--color-sage-dark);
+.rsvp-feedback-title {
+  font-family: var(--font-sans);
+  font-size: 0.92rem;
   font-weight: 500;
+  color: var(--color-sage-dark);
+  margin-bottom: 4px;
 }
 
-.rsvp-recipient-status.pending {
-  color: var(--color-beige);
-  font-style: italic;
+.rsvp-feedback-hint {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  color: var(--color-dark-light);
+  margin-bottom: var(--spacing-sm);
 }
 
-.rsvp-recipient-action-btn {
+.rsvp-fallback-actions {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  flex-wrap: wrap;
+}
+
+.rsvp-fallback-btn {
   display: inline-flex;
   align-items: center;
   gap: 6px;
   font-family: var(--font-sans);
   font-size: 0.8rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  font-weight: 500;
+  color: var(--color-dark);
+  background-color: var(--color-white);
+  border: 1px solid rgba(199, 164, 145, 0.4);
   padding: 8px 14px;
-  border-radius: 30px;
+  border-radius: 20px;
   text-decoration: none;
-  cursor: pointer;
   transition: all 0.2s ease;
-  white-space: nowrap;
 }
 
-.rsvp-recipient-action-btn.primary {
-  background-color: #25D366; /* WhatsApp Brand Green */
-  color: #FFFFFF;
-  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.35);
-  animation: pulse-gentle 2s infinite ease-in-out;
-}
-
-.rsvp-recipient-action-btn.primary:hover {
-  background-color: #20BA5A;
-  transform: translateY(-1px);
-  box-shadow: 0 6px 16px rgba(37, 211, 102, 0.45);
-}
-
-.rsvp-recipient-action-btn.secondary {
-  background-color: transparent;
-  border: 1px solid rgba(145, 150, 130, 0.4);
-  color: var(--color-dark-light);
-}
-
-.rsvp-recipient-action-btn.secondary:hover {
+.rsvp-fallback-btn:hover {
   background-color: rgba(145, 150, 130, 0.1);
-  color: var(--color-dark);
   border-color: var(--color-sage);
-}
-
-@keyframes pulse-gentle {
-  0%, 100% {
-    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.35);
-  }
-  50% {
-    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.6);
-  }
-}
-
-.rsvp-modal-footer {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-sm);
-  align-items: center;
-}
-
-.rsvp-success-note {
-  font-family: var(--font-sans);
-  font-size: 0.88rem;
   color: var(--color-sage-dark);
-  background-color: rgba(145, 150, 130, 0.12);
-  border-radius: 8px;
-  padding: 8px 12px;
-  width: 100%;
-  animation: fadeIn 0.4s ease;
-}
-
-.rsvp-success-note.hidden {
-  display: none;
-}
-
-.rsvp-btn-done {
-  width: 100%;
-  background-color: transparent;
-  border: 1px solid rgba(145, 150, 130, 0.3);
-  color: var(--color-dark-light);
-  padding: 10px 20px;
-  font-size: 0.85rem;
-  letter-spacing: 1.5px;
-  border-radius: 50px;
-  cursor: pointer;
-  text-transform: uppercase;
-  transition: all 0.2s ease;
-}
-
-.rsvp-btn-done:hover {
-  background-color: rgba(145, 150, 130, 0.08);
-  color: var(--color-dark);
-  border-color: var(--color-sage);
 }

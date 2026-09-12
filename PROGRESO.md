@@ -151,10 +151,10 @@
 ✔ Se enriqueció `services/whatsapp.js`:
   - Detección automática de números a 10 dígitos (formato estándar de México) para anteponer el prefijo de país `52` de forma infalible.
 
-✔ Se implementó el flujo de confirmación doble en `components/RSVP/index.js` y `components/RSVP/styles.css`:
-  - Apertura automática del chat de WhatsApp para Daniel.
-  - Despliegue de un modal de confirmación con diseño nupcial refinado, informando al invitado del estado y proporcionando un botón destacado para notificar a Angélica.
-  - Marcado dinámico del estado de entrega ("Mensaje abierto") y mensaje de confirmación de éxito tras notificar a ambos.
+✔ Se implementó el flujo de confirmación doble directa (Opción 4) en `components/RSVP/index.js` y `components/RSVP/styles.css`:
+  - Apertura directa de ambos enlaces de WhatsApp para Daniel y Angélica al pulsar el botón principal.
+  - Eliminación total de modales emergentes intrusivos.
+  - Inclusión de un bloque de feedback sutil integrado debajo del botón para reenviar individualmente a cualquiera de los dos en caso de que el navegador bloquee la segunda pestaña.
 
 ---
 

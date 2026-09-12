@@ -53,7 +53,7 @@ WhatsApp mediante enlace personalizado y flujo de envío doble:
 - **Daniel (Novio):** +52 246 102 6338 (`2461026338`)
 - **Angélica (Novia):** +52 246 325 9593 (`2463259593`)
 
-Al confirmar asistencia, el sistema abre la conversación con Daniel y despliega un modal elegante guiando al invitado a enviar también la confirmación a Angélica, asegurando que ambos novios reciban la notificación sin problemas de bloqueo de ventanas emergentes.
+Al presionar el botón de confirmación, se disparan directamente ambos enlaces de WhatsApp (Daniel y Angélica) sin modales ni pantallas intermedias, disponiendo de accesos sutiles de respaldo debajo del botón por si el navegador bloquea alguna ventana.
 
 ---
 
